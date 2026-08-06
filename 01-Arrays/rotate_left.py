@@ -14,4 +14,4 @@ arr = [1, 2, 3, 4, 5]
 
 result = rotate_left(arr)
 
-print("Array after left rotation:", result)
+
