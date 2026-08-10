@@ -1,6 +1,3 @@
-# Problem 26: Delete the Last Node
-
-
 class Node:
 
     def __init__(self, data):
@@ -51,4 +48,3 @@ while current is not None:
     print(current.data, end=" ")
 
     current = current.next
-    
