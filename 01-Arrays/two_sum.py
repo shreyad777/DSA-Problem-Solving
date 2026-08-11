@@ -1,26 +1,6 @@
-def two_sum(arr, target):
+arr=[10,20,30,40,50]
+sum=0
+for element in arr:
+    sum+=element    
+print(sum)
 
-    numbers = {}
-
-    for i in range(len(arr)):
-
-        current = arr[i]
-
-        needed = target - current
-
-        if needed in numbers:
-            return [numbers[needed], i]
-
-        numbers[current] = i
-
-    return []
-
-
-arr = [2, 7, 11, 15]
-target = 9
-
-result = two_sum(arr, target)
-
-print("Array:", arr)
-print("Target:", target)
-print("Indices:", result)
