@@ -1,6 +1,4 @@
 # Problem 24: Insert a Node at a Specific Position
-
-
 class Node:
 
     def __init__(self, data):
