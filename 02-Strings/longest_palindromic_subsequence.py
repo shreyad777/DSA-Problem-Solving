@@ -1,6 +1,3 @@
-# Question 123: Longest Palindromic Subsequence
-
-
 def longest_palindromic_subsequence(s):
 
     reversed_s = s[::-1]
