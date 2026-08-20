@@ -1,6 +1,3 @@
-# Question 68: Find Inorder Successor in a BST
-
-
 class Node:
 
     def __init__(self, data):
