@@ -1,6 +1,3 @@
-# Question 69: Lowest Common Ancestor in a BST
-
-
 class Node:
 
     def __init__(self, data):
