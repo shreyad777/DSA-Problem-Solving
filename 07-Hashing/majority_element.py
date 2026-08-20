@@ -1,6 +1,3 @@
-# Question 80: Find Majority Element
-
-
 def majority_element(arr):
 
     frequency = {}
