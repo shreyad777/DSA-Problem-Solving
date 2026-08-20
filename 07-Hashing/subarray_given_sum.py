@@ -1,6 +1,3 @@
-# Question 79: Find Subarray With Given Sum
-
-
 def find_subarray(arr, target):
 
     prefix_sum = 0
