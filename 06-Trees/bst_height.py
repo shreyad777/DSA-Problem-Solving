@@ -1,6 +1,3 @@
-# Question 67: Find Height of a BST
-
-
 class Node:
 
     def __init__(self, data):
