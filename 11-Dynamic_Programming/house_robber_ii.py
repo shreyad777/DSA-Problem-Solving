@@ -1,6 +1,3 @@
-# Question 127: House Robber II
-
-
 def rob_linear(nums):
 
     previous_two = 0
