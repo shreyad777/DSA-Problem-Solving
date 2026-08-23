@@ -1,6 +1,3 @@
-# Question 118: Partition Equal Subset Sum
-
-
 def can_partition(nums):
 
     total_sum = sum(nums)
