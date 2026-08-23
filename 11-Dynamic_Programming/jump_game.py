@@ -1,6 +1,3 @@
-# Question 130: Jump Game
-
-
 def can_jump(nums):
 
     farthest = 0
