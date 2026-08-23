@@ -1,6 +1,3 @@
-# Question 128: Min Cost Climbing Stairs
-
-
 def min_cost_climbing_stairs(cost):
 
     n = len(cost)
