@@ -1,12 +1,16 @@
+# Question 133: Coin Change
+
+
 def coin_change(coins, amount):
 
-    # Initialize DP array
-    dp = [float("inf")] * (amount + 1)
+    # amount + 1 acts as infinity
+    impossible = amount + 1
 
-    # Zero coins are needed for amount 0
+    dp = [impossible] * (amount + 1)
+
+    # 0 coins are needed to make amount 0
     dp[0] = 0
 
-    # Calculate minimum coins for every amount
     for current_amount in range(1, amount + 1):
 
         for coin in coins:
@@ -18,8 +22,7 @@ def coin_change(coins, amount):
                     dp[current_amount - coin] + 1
                 )
 
-    # If amount cannot be formed
-    if dp[amount] == float("inf"):
+    if dp[amount] == impossible:
         return -1
 
     return dp[amount]
@@ -28,6 +31,7 @@ def coin_change(coins, amount):
 coins = [1, 2, 5]
 amount = 11
 
-result = coin_change(coins, amount)
-
-print("Minimum number of coins:", result)
+print(
+    "Minimum coins:",
+    coin_change(coins, amount)
+)
