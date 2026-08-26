@@ -1,6 +1,3 @@
-# Question 133: Coin Change
-
-
 def coin_change(coins, amount):
 
     # amount + 1 acts as infinity
