@@ -1,24 +1,13 @@
-# Question 129: Combination Sum
-
-
 def combination_sum(candidates, target):
-
     result = []
-
     def backtrack(
         start,
         remaining,
         current
     ):
-
-        # Target reached
         if remaining == 0:
-
             result.append(current.copy())
-
             return
-
-        # Target exceeded
         if remaining < 0:
             return
 
@@ -28,18 +17,12 @@ def combination_sum(candidates, target):
         ):
 
             num = candidates[i]
-
-            # Choose
             current.append(num)
-
-            # Explore
             backtrack(
                 i,
                 remaining - num,
                 current
             )
-
-            # Undo
             current.pop()
 
     backtrack(
