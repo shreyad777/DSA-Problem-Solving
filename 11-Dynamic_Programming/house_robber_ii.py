@@ -26,17 +26,11 @@ def rob(nums):
     if n == 1:
         return nums[0]
 
-    # Case 1:
-    # Do not rob the first house
-    case_one = rob_linear(nums[1:])
 
-    # Case 2:
-    # Do not rob the last house
+    case_one = rob_linear(nums[1:])
     case_two = rob_linear(nums[:-1])
 
     return max(case_one, case_two)
-
-
 nums = [2, 3, 2]
 
 print("Maximum money:", rob(nums))
