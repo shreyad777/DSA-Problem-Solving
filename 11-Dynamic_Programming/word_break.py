@@ -1,11 +1,9 @@
+
 def word_break(s, wordDict):
 
     word_set = set(wordDict)
 
     n = len(s)
-
-    # dp[i] means:
-    # first i characters can be segmented
     dp = [False] * (n + 1)
 
     dp[0] = True
@@ -20,10 +18,6 @@ def word_break(s, wordDict):
                 break
 
     return dp[n]
-
-
 s = "leetcode"
-
 wordDict = ["leet", "code"]
-
 print("Can word be segmented:", word_break(s, wordDict))
