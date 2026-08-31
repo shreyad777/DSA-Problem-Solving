@@ -4,11 +4,7 @@ class Node:
         self.data = data
         self.left = None
         self.right = None
-
-
-# Insert into BST
 def insert(root, value):
-
     if root is None:
         return Node(value)
 
@@ -20,8 +16,6 @@ def insert(root, value):
 
     return root
 
-
-# Find LCA
 def find_lca(root, p, q):
 
     current = root
@@ -38,18 +32,12 @@ def find_lca(root, p, q):
             return current
 
     return None
-
-
-# Create BST
 root = None
 
 values = [50, 30, 70, 20, 40, 60, 80]
 
 for value in values:
     root = insert(root, value)
-
-
-# Find LCA
 p = 20
 q = 40
 
