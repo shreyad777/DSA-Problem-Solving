@@ -1,12 +1,8 @@
 class Node:
-
     def __init__(self, data):
         self.data = data
         self.left = None
         self.right = None
-
-
-# Insert into BST
 def insert(root, value):
 
     if root is None:
@@ -20,8 +16,6 @@ def insert(root, value):
 
     return root
 
-
-# Find inorder successor
 def inorder_successor(root, target):
 
     successor = None
@@ -51,17 +45,12 @@ def inorder_successor(root, target):
 
     return successor
 
-
-# Create BST
 root = None
-
 values = [50, 30, 70, 20, 40, 60, 80]
 
 for value in values:
     root = insert(root, value)
 
-
-# Find successor
 target = 50
 
 successor = inorder_successor(root, target)
