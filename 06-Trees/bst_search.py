@@ -1,12 +1,8 @@
 class Node:
-
     def __init__(self, data):
         self.data = data
         self.left = None
         self.right = None
-
-
-# Insert into BST
 def insert(root, value):
 
     if root is None:
@@ -20,8 +16,6 @@ def insert(root, value):
 
     return root
 
-
-# Search in BST
 def search(root, target):
 
     if root is None:
@@ -35,8 +29,6 @@ def search(root, target):
 
     return search(root.right, target)
 
-
-# Create BST
 root = None
 
 values = [50, 30, 70, 20, 40, 60, 80]
@@ -44,8 +36,6 @@ values = [50, 30, 70, 20, 40, 60, 80]
 for value in values:
     root = insert(root, value)
 
-
-# Search
 target = 60
 
 if search(root, target):
