@@ -1,12 +1,8 @@
 class Node:
-
     def __init__(self, data):
         self.data = data
         self.left = None
         self.right = None
-
-
-# Create tree
 root = Node(10)
 
 root.left = Node(5)
@@ -15,8 +11,6 @@ root.right = Node(20)
 root.left.left = Node(3)
 root.left.right = Node(7)
 
-
-# Find maximum value
 def find_max(root):
 
     if root is None:
@@ -27,8 +21,6 @@ def find_max(root):
 
     return max(root.data, left_max, right_max)
 
-
-# Display result
 maximum = find_max(root)
 
 print("Maximum value:", maximum)
