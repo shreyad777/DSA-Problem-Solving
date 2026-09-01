@@ -1,5 +1,4 @@
 def longest_palindromic_subsequence(s):
-
     reversed_s = s[::-1]
 
     n = len(s)
