@@ -4,8 +4,6 @@ def find_missing_number(arr):
     actual_sum = sum(arr)
     return expected_sum - actual_sum
 arr = [1, 2, 3, 5]
-
 result = find_missing_number(arr)
-
 print("Array:", arr)
 print("Missing number:", result)
