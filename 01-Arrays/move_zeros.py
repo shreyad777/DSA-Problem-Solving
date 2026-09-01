@@ -7,7 +7,5 @@ def move_zeros(arr):
     return arr
 
 arr = [0, 1, 0, 3, 12]
-
 result = move_zeros(arr)
-
 print("Array after moving zeros:", result)
