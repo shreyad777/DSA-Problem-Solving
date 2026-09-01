@@ -1,13 +1,9 @@
 def are_anagrams(text1, text2):
-
     if len(text1) != len(text2):
         return False
-
     frequency1 = {}
     frequency2 = {}
-
     for char in text1:
-
         if char in frequency1:
             frequency1[char] += 1
         else:
