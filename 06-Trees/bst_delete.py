@@ -11,13 +11,11 @@ def insert(root, value):
     elif value > root.data:
         root.right = insert(root.right, value)
     return root
-
 def find_min(root):
     current = root
     while current.left is not None:
         current = current.left
     return current
-
 def delete(root, value):
     if root is None:
         return None
@@ -25,7 +23,6 @@ def delete(root, value):
         root.left = delete(root.left, value)
     elif value > root.data:
         root.right = delete(root.right, value)
-
     else:
         if root.left is None:
             return root.right
@@ -35,22 +32,18 @@ def delete(root, value):
         root.data = successor.data
         root.right = delete(root.right, successor.data)
     return root
-
 def inorder(root):
     if root is None:
         return
     inorder(root.left)
     print(root.data, end=" ")
     inorder(root.right)
-
 root = None
 values = [50, 30, 70, 20, 40, 60, 80]
 for value in values:
     root = insert(root, value)
 print("Before deletion:")
 inorder(root)
-
 root = delete(root, 30)
-
 print("\nAfter deletion:")
 inorder(root)
