@@ -4,34 +4,22 @@ class Node:
         self.left = None
         self.right = None
 def insert(root, value):
-
     if root is None:
         return Node(value)
-
     if value < root.data:
         root.left = insert(root.left, value)
-
     elif value > root.data:
         root.right = insert(root.right, value)
-
     return root
 def find_min(root):
-
     if root is None:
         return None
-
     if root.left is None:
         return root.data
-
     return find_min(root.left)
-
 root = None
-
 values = [50, 30, 70, 20, 40, 60, 80]
-
 for value in values:
     root = insert(root, value)
-
 minimum = find_min(root)
-
 print("Minimum value:", minimum)
