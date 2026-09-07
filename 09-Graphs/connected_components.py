@@ -1,52 +1,28 @@
 class Graph:
-
     def __init__(self):
         self.graph = {}
-
-    # Add vertex
     def add_vertex(self, vertex):
-
         if vertex not in self.graph:
             self.graph[vertex] = []
-
-    # Add undirected edge
     def add_edge(self, vertex1, vertex2):
-
         self.add_vertex(vertex1)
         self.add_vertex(vertex2)
-
         self.graph[vertex1].append(vertex2)
         self.graph[vertex2].append(vertex1)
-
-    # Find connected components
     def connected_components(self):
-
         visited = set()
         components = []
-
         def dfs(vertex, component):
-
             visited.add(vertex)
-
             component.append(vertex)
-
             for neighbor in self.graph[vertex]:
-
                 if neighbor not in visited:
-
                     dfs(neighbor, component)
-
-        # Check every vertex
         for vertex in self.graph:
-
             if vertex not in visited:
-
                 component = []
-
                 dfs(vertex, component)
-
                 components.append(component)
-
         return components
 
 
