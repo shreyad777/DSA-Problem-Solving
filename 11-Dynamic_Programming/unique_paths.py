@@ -15,8 +15,7 @@ def unique_paths(m, n):
                 dp[i - 1][j]
                 + dp[i][j - 1]
             )
-
     return dp[m - 1][n - 1]
 m = 3
-n = 3
+n = 4
 print("Number of unique paths:", unique_paths(m, n))
