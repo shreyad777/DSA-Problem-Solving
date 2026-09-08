@@ -1,5 +1,4 @@
 def longest_common_subsequence(text1, text2):
-
     m = len(text1)
     n = len(text2)
     dp = [
@@ -16,14 +15,10 @@ def longest_common_subsequence(text1, text2):
                     dp[i][j - 1]
                 )
     return dp[m][n]
-
-
 text1 = "abcde"
 text2 = "ace"
-
 result = longest_common_subsequence(
     text1,
     text2
 )
-
 print("Length of LCS:", result)
