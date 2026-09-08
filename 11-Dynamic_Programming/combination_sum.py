@@ -10,12 +10,10 @@ def combination_sum(candidates, target):
             return
         if remaining < 0:
             return
-
         for i in range(
             start,
             len(candidates)
         ):
-
             num = candidates[i]
             current.append(num)
             backtrack(
@@ -24,19 +22,14 @@ def combination_sum(candidates, target):
                 current
             )
             current.pop()
-
     backtrack(
         0,
         target,
         []
     )
-
     return result
-
-
 candidates = [2, 3, 6, 7]
 target = 7
-
 print(
     "Combinations:",
     combination_sum(
