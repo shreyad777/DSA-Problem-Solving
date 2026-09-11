@@ -11,16 +11,12 @@ def insert_at_end(head, data):
         current = current.next
     current.next = new_node
     return head
-
 node1 = Node(10)
 node2 = Node(20)
 node3 = Node(30)
-
 node1.next = node2
 node2.next = node3
-
 head = node1
-
 head = insert_at_end(head, 40)
 current = head
 while current is not None:
