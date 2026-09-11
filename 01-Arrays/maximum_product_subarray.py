@@ -20,7 +20,6 @@ def max_product(nums):
             result,
             current_max
         )
-
     return result
 nums = [2, 3, -2, 4]
 print("Maximum product:", max_product(nums))
