@@ -3,7 +3,6 @@ class PriorityQueue:
     def __init__(self):
         self.queue = []
     def enqueue(self, item, priority):
-
         heapq.heappush(
             self.queue,
             (priority, item)
