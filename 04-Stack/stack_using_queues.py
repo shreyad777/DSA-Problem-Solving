@@ -17,11 +17,9 @@ class StackUsingQueue:
     def is_empty(self):
         return len(self.q) == 0
 stack = StackUsingQueue()
-
 stack.push(10)
 stack.push(20)
 stack.push(30)
-
 print("Top element:", stack.peek())
 print("Popped:", stack.pop())
 print("Popped:", stack.pop())
