@@ -24,34 +24,19 @@ class Graph:
                 dfs(vertex, component)
                 components.append(component)
         return components
-
-
-# Create graph
 g = Graph()
-
-# Component 1
 g.add_edge(0, 1)
 g.add_edge(1, 2)
-
-# Component 2
 g.add_vertex(3)
-
-# Component 3
 g.add_edge(4, 5)
 g.add_edge(5, 6)
-
-# Find components
 components = g.connected_components()
-
 print("Connected Components:")
-
 for i, component in enumerate(components, 1):
-
     print(
         "Component",
         i,
         ":",
         component
     )
-
 print("Total Components:", len(components))
