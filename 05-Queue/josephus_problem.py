@@ -8,7 +8,7 @@ def josephus(n, k):
             queue.append(queue.popleft())
         queue.popleft()
     return queue[0]
-n = 7
+n = 9
 k = 3
 result = josephus(n, k)
 print("Number of people:", n)
