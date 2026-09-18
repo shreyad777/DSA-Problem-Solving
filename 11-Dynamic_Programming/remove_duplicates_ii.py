@@ -12,11 +12,8 @@ class Solution:
         for char, count in stack:
             result.append(char * count)
         return "".join(result)
-
-
 s = input("Enter string: ")
 k = int(input("Enter k: "))
-
 solution = Solution()
 
 print(
