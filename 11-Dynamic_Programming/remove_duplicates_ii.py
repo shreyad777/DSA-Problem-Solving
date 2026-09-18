@@ -8,12 +8,9 @@ class Solution:
                     stack.pop()
             else:
                 stack.append([char, 1])
-
         result = []
-
         for char, count in stack:
             result.append(char * count)
-
         return "".join(result)
 
 
