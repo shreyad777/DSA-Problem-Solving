@@ -15,7 +15,6 @@ class Solution:
 s = input("Enter string: ")
 k = int(input("Enter k: "))
 solution = Solution()
-
 print(
     "Result:",
     solution.removeDuplicates(s, k)
