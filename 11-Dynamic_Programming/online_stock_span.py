@@ -13,8 +13,6 @@ prices = list(
 )
 spanner = StockSpanner()
 result = []
-
 for price in prices:
     result.append(spanner.next(price))
-
 print("Stock Spans:", result)
