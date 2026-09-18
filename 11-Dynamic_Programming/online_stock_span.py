@@ -8,14 +8,10 @@ class StockSpanner:
             span += previous_span
         self.stack.append((price, span))
         return span
-
-
 prices = list(
     map(int, input("Enter stock prices: ").split())
 )
-
 spanner = StockSpanner()
-
 result = []
 
 for price in prices:
