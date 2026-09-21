@@ -19,9 +19,7 @@ class Solution:
 arr = list(
     map(int, input("Enter array elements: ").split())
 )
-
 solution = Solution()
-
 print(
     "Sum of Subarray Minimums:",
     solution.sumSubarrayMins(arr)
