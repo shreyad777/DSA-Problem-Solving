@@ -12,9 +12,7 @@ class Solution:
 nums = list(
     map(int, input("Enter elements: ").split())
 )
-
 solution = Solution()
-
 print(
     "132 Pattern:",
     solution.find132pattern(nums)
