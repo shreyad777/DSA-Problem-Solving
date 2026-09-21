@@ -3,8 +3,6 @@ class Solution:
         stack = []
         second = float("-inf")
         for i in range(len(nums) - 1, -1, -1):
-
-            # nums[i] can be the "1"
             if nums[i] < second:
                 return True
 
