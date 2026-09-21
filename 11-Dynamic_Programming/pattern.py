@@ -7,8 +7,6 @@ class Solution:
                 return True
             while stack and nums[i] > stack[-1]:
                 second = stack.pop()
-
-            # Current value can become a future "3"
             stack.append(nums[i])
 
         return False
