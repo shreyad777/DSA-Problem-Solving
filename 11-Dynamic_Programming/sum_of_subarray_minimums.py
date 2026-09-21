@@ -5,7 +5,6 @@ class Solution:
         stack = []
         result = 0
         for i in range(n + 1):
-
             current = arr[i] if i < n else float("-inf")
 
             while stack and arr[stack[-1]] > current:
