@@ -9,10 +9,8 @@ class Solution:
             while stack and arr[stack[-1]] > current:
                 mid = stack.pop()
                 left_boundary = stack[-1] if stack else -1
-
                 left = mid - left_boundary
                 right = i - mid
-
                 result += (
                     arr[mid] * left * right
                 )
