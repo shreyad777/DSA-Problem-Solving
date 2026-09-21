@@ -14,12 +14,8 @@ class Solution:
                 result += (
                     arr[mid] * left * right
                 )
-
             stack.append(i)
-
         return result % MOD
-
-
 arr = list(
     map(int, input("Enter array elements: ").split())
 )
