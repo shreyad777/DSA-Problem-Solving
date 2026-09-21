@@ -8,10 +8,7 @@ class Solution:
             while stack and nums[i] > stack[-1]:
                 second = stack.pop()
             stack.append(nums[i])
-
         return False
-
-
 nums = list(
     map(int, input("Enter elements: ").split())
 )
