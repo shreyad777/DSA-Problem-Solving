@@ -6,10 +6,8 @@ class Solution:
         result = 0
         for i in range(n + 1):
             current = arr[i] if i < n else float("-inf")
-
             while stack and arr[stack[-1]] > current:
                 mid = stack.pop()
-
                 left_boundary = stack[-1] if stack else -1
 
                 left = mid - left_boundary
