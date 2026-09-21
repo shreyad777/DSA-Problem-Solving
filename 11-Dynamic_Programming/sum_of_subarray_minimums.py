@@ -2,10 +2,8 @@ class Solution:
     def sumSubarrayMins(self, arr):
         MOD = 10**9 + 7
         n = len(arr)
-
         stack = []
         result = 0
-
         for i in range(n + 1):
 
             current = arr[i] if i < n else float("-inf")
