@@ -13,11 +13,8 @@ class Solution:
                     else mid + 1
                 )
                 right = i - mid
-
                 total += nums[mid] * left * right
-
             stack.append(i)
-
         return total
 
     def sumSubarrayMaxs(self, nums):
