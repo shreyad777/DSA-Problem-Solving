@@ -20,9 +20,7 @@ class Solution:
             return middle if middle else "0"
         return left + middle + left[::-1]
 num = input("Enter digits: ")
-
 solution = Solution()
-
 print(
     "Largest Palindromic Number:",
     solution.largestPalindromic(num)
