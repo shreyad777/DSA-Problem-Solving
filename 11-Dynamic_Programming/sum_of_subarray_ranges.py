@@ -16,15 +16,12 @@ class Solution:
                 total += nums[mid] * left * right
             stack.append(i)
         return total
-
     def sumSubarrayMaxs(self, nums):
         n = len(nums)
         stack = []
         total = 0
-
         for i in range(n + 1):
             current = nums[i] if i < n else float("inf")
-
             while stack and nums[stack[-1]] < current:
                 mid = stack.pop()
 
