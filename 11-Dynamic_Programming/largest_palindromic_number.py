@@ -4,12 +4,8 @@ class Solution:
         for digit in num:
             count[int(digit)] += 1
         left = []
-
-        # Build the left half from largest digit to smallest
         for digit in range(9, -1, -1):
             pairs = count[digit] // 2
-
-            # Don't allow leading zero
             if digit == 0 and not left:
                 pairs = 0
 
