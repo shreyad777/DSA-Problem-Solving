@@ -22,6 +22,6 @@ class Solution:
 num = input("Enter digits: ")
 solution = Solution()
 print(
-    "Largest Palindromic Number:",
+    "Largest Palindromic Number is :",
     solution.largestPalindromic(num)
 )
