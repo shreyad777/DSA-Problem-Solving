@@ -16,8 +16,6 @@ class Solution:
             if count[digit] > 0:
                 middle = str(digit)
                 break
-
-        # If everything was zero, return "0"
         if not left:
             return middle if middle else "0"
 
