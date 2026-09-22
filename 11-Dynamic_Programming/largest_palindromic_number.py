@@ -11,10 +11,7 @@ class Solution:
             left.append(str(digit) * pairs)
             count[digit] -= pairs * 2
         left = "".join(left)
-
-        # Find the largest remaining digit for the center
         middle = ""
-
         for digit in range(9, -1, -1):
             if count[digit] > 0:
                 middle = str(digit)
