@@ -31,11 +31,8 @@ class Solution:
                 )
                 right = i - mid
                 total += nums[mid] * left * right
-
             stack.append(i)
-
         return total
-
     def subArrayRanges(self, nums):
         maximum_sum = self.sumSubarrayMaxs(nums)
         minimum_sum = self.sumSubarrayMins(nums)
