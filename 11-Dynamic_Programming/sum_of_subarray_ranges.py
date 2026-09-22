@@ -36,16 +36,11 @@ class Solution:
     def subArrayRanges(self, nums):
         maximum_sum = self.sumSubarrayMaxs(nums)
         minimum_sum = self.sumSubarrayMins(nums)
-
         return maximum_sum - minimum_sum
-
-
 nums = list(
     map(int, input("Enter array elements: ").split())
 )
-
 solution = Solution()
-
 print(
     "Sum of Subarray Ranges:",
     solution.subArrayRanges(nums)
