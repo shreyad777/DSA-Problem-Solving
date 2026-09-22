@@ -18,10 +18,7 @@ class Solution:
                 break
         if not left:
             return middle if middle else "0"
-
         return left + middle + left[::-1]
-
-
 num = input("Enter digits: ")
 
 solution = Solution()
