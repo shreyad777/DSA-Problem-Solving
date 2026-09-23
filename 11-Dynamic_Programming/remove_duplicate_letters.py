@@ -19,8 +19,6 @@ class Solution:
             stack.append(char)
             used.add(char)
         return "".join(stack)
-
-
 s = input("Enter string: ")
 
 solution = Solution()
