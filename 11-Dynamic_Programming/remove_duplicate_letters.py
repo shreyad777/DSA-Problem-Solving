@@ -16,10 +16,8 @@ class Solution:
             ):
                 removed = stack.pop()
                 used.remove(removed)
-
             stack.append(char)
             used.add(char)
-
         return "".join(stack)
 
 
