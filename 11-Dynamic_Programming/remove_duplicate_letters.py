@@ -20,7 +20,6 @@ class Solution:
             used.add(char)
         return "".join(stack)
 s = input("Enter string: ")
-
 solution = Solution()
 
 print(
