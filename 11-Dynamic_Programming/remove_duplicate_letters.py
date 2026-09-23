@@ -21,7 +21,6 @@ class Solution:
         return "".join(stack)
 s = input("Enter string: ")
 solution = Solution()
-
 print(
     "Result:",
     solution.removeDuplicateLetters(s)
