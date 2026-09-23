@@ -7,12 +7,8 @@ class Solution:
         used = set()
         for char in s:
             count[char] -= 1
-
-            # Already included in answer
             if char in used:
                 continue
-
-            # Remove larger characters if they appear again
             while (
                 stack
                 and stack[-1] > char
