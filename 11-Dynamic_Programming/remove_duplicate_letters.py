@@ -3,10 +3,8 @@ class Solution:
         count = {}
         for char in s:
             count[char] = count.get(char, 0) + 1
-
         stack = []
         used = set()
-
         for char in s:
             count[char] -= 1
 
