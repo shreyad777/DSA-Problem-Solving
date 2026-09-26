@@ -15,9 +15,7 @@ position = list(
 speed = list(
     map(int, input("Enter speeds: ").split())
 )
-
 solution = Solution()
-
 print(
     "Number of Car Fleets:",
     solution.carFleet(target, position, speed)
