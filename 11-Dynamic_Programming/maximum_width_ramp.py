@@ -12,16 +12,11 @@ class Solution:
                     maximum_width,
                     j - i
                 )
-
         return maximum_width
-
-
 nums = list(
     map(int, input("Enter array elements: ").split())
 )
-
 solution = Solution()
-
 print(
     "Maximum Width Ramp:",
     solution.maxWidthRamp(nums)
