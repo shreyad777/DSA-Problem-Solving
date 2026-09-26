@@ -9,11 +9,9 @@ class Solution:
                 stack.append(time)
         return len(stack)
 target = int(input("Enter target: "))
-
 position = list(
     map(int, input("Enter positions: ").split())
 )
-
 speed = list(
     map(int, input("Enter speeds: ").split())
 )
