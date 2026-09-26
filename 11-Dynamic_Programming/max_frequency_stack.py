@@ -14,13 +14,8 @@ class FreqStack:
             frequency
         )
     def pop(self):
-        # Get most recent value
         val = self.group[self.max_freq].pop()
-
-        # Decrease its frequency
         self.freq[val] -= 1
-
-        # If this frequency stack becomes empty
         if not self.group[self.max_freq]:
             self.max_freq -= 1
 
