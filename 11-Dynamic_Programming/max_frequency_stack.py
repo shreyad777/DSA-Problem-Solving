@@ -5,21 +5,14 @@ class FreqStack:
         self.max_freq = 0
     def push(self, val):
         self.freq[val] = self.freq.get(val, 0) + 1
-
         frequency = self.freq[val]
-
-        # Create stack for this frequency
         if frequency not in self.group:
             self.group[frequency] = []
-
         self.group[frequency].append(val)
-
-        # Update maximum frequency
         self.max_freq = max(
             self.max_freq,
             frequency
         )
-
     def pop(self):
         # Get most recent value
         val = self.group[self.max_freq].pop()
