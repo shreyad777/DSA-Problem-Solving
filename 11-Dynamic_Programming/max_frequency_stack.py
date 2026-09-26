@@ -18,16 +18,11 @@ class FreqStack:
         self.freq[val] -= 1
         if not self.group[self.max_freq]:
             self.max_freq -= 1
-
         return val
-
-
 freq_stack = FreqStack()
-
 operations = input(
     "Enter operations separated by spaces: "
 ).split()
-
 result = []
 
 for operation in operations:
