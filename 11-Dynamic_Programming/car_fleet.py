@@ -5,9 +5,6 @@ class Solution:
         stack = []
         for pos, spd in cars:
             time = (target - pos) / spd
-
-            # A new fleet is formed only if
-            # this car takes longer than the fleet ahead
             if not stack or time > stack[-1]:
                 stack.append(time)
 
