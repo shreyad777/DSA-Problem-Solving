@@ -24,18 +24,12 @@ operations = input(
     "Enter operations separated by spaces: "
 ).split()
 result = []
-
 for operation in operations:
-
     if operation.startswith("push"):
         value = int(
             operation.split("(")[1].split(")")[0]
         )
-
         freq_stack.push(value)
-
     elif operation == "pop":
         result.append(freq_stack.pop())
-
-
 print("Pop Results:", result)
