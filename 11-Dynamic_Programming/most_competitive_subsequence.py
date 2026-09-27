@@ -10,9 +10,7 @@ class Solution:
             ):
                 stack.pop()
                 remove -= 1
-
             stack.append(num)
-
         return stack[:k]
 
 
