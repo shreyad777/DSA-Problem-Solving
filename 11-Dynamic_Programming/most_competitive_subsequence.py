@@ -15,11 +15,8 @@ class Solution:
 nums = list(
     map(int, input("Enter array elements: ").split())
 )
-
 k = int(input("Enter k: "))
-
 solution = Solution()
-
 print(
     "Most Competitive Subsequence:",
     solution.mostCompetitive(nums, k)
