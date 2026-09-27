@@ -1,9 +1,7 @@
 class Solution:
     def mostCompetitive(self, nums, k):
         stack = []
-
         remove = len(nums) - k
-
         for num in nums:
             while (
                 stack
