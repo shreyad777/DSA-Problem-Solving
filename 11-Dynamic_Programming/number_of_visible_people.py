@@ -11,14 +11,10 @@ class Solution:
                 result[i] += 1
             stack.append(heights[i])
         return result
-
-
 heights = list(
     map(int, input("Enter heights: ").split())
 )
-
 solution = Solution()
-
 print(
     "Visible People:",
     solution.canSeePersonsCount(heights)
