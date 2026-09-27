@@ -12,8 +12,6 @@ class Solution:
                 remove -= 1
             stack.append(num)
         return stack[:k]
-
-
 nums = list(
     map(int, input("Enter array elements: ").split())
 )
