@@ -7,13 +7,9 @@ class Solution:
             while stack and heights[i] > stack[-1]:
                 stack.pop()
                 result[i] += 1
-
-            # The first remaining taller person is also visible
             if stack:
                 result[i] += 1
-
             stack.append(heights[i])
-
         return result
 
 
