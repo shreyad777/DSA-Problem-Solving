@@ -17,9 +17,6 @@ class MinStack:
         return self.stack[-1]
     def getMin(self):
         return self.min_stack[-1]
-
-
-# Input
 operations = input(
     "Enter operations separated by spaces: "
 ).split()
