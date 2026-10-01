@@ -20,11 +20,9 @@ class MinStack:
 operations = input(
     "Enter operations separated by spaces: "
 ).split()
-
 values = input(
     "Enter values separated by spaces: "
 ).split()
-
 stack = MinStack()
 value_index = 0
 
