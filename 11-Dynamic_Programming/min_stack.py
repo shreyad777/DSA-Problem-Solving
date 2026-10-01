@@ -35,9 +35,7 @@ for operation in operations:
     elif operation == "pop":
         stack.pop()
         print("Popped")
-
     elif operation == "top":
         print("Top:", stack.top())
-
     elif operation == "min":
         print("Minimum:", stack.getMin())
