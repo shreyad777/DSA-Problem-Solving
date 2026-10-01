@@ -8,9 +8,7 @@ class Solution:
                 stack.append(char)
         return "".join(stack)
 s = input("Enter string: ")
-
 solution = Solution()
-
 print(
     "Result:",
     solution.removeDuplicates(s)
