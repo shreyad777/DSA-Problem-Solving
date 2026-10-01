@@ -22,7 +22,5 @@ root = TreeNode(
         TreeNode(1)
     )
 )
-
 solution = Solution()
-
 print("Boolean Result:", solution.evaluateTree(root))
