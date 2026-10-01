@@ -25,16 +25,13 @@ values = input(
 ).split()
 stack = MinStack()
 value_index = 0
-
 for operation in operations:
-
     if operation == "push":
         value = int(values[value_index])
         value_index += 1
 
         stack.push(value)
         print("Pushed:", value)
-
     elif operation == "pop":
         stack.pop()
         print("Popped")
