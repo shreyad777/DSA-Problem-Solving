@@ -18,9 +18,7 @@ class Solution:
                 prev_time = timestamp + 1
         return result
 n = int(input("Enter number of functions: "))
-
 m = int(input("Enter number of logs: "))
-
 logs = []
 
 print("Enter logs:")
