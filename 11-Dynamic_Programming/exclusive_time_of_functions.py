@@ -13,9 +13,7 @@ class Solution:
                 stack.append(function_id)
                 prev_time = timestamp
             else:
-
                 result[stack[-1]] += timestamp - prev_time + 1
-
                 stack.pop()
 
                 prev_time = timestamp + 1
