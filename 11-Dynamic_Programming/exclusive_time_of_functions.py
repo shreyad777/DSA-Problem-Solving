@@ -15,12 +15,8 @@ class Solution:
             else:
                 result[stack[-1]] += timestamp - prev_time + 1
                 stack.pop()
-
                 prev_time = timestamp + 1
-
         return result
-
-
 n = int(input("Enter number of functions: "))
 
 m = int(input("Enter number of logs: "))
