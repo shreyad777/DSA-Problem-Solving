@@ -7,9 +7,7 @@ class Solution:
             function_id, action, timestamp = log.split(":")
             function_id = int(function_id)
             timestamp = int(timestamp)
-
             if action == "start":
-
                 if stack:
                     result[stack[-1]] += timestamp - prev_time
 
