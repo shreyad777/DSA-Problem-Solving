@@ -11,14 +11,9 @@ class Solution:
                 else:
                     score = 2 * current
                 stack[-1] += score
-
         return stack[0]
-
-
 s = input("Enter balanced parentheses: ")
-
 solution = Solution()
-
 print(
     "Score:",
     solution.scoreOfParentheses(s)
