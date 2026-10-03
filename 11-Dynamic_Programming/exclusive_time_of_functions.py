@@ -20,9 +20,7 @@ class Solution:
 n = int(input("Enter number of functions: "))
 m = int(input("Enter number of logs: "))
 logs = []
-
 print("Enter logs:")
-
 for _ in range(m):
     logs.append(input())
 
