@@ -23,7 +23,6 @@ logs = []
 print("Enter logs:")
 for _ in range(m):
     logs.append(input())
-
 solution = Solution()
 
 print(
