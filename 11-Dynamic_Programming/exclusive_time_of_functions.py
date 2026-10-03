@@ -10,10 +10,8 @@ class Solution:
             if action == "start":
                 if stack:
                     result[stack[-1]] += timestamp - prev_time
-
                 stack.append(function_id)
                 prev_time = timestamp
-
             else:
 
                 result[stack[-1]] += timestamp - prev_time + 1
