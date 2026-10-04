@@ -1,5 +1,4 @@
 class Solution:
-
     def removeDuplicates(self, s, k):
         stack = []
 
