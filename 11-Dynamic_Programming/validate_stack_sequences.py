@@ -18,9 +18,7 @@ pushed = list(
 popped = list(
     map(int, input("Enter popped sequence: ").split())
 )
-
 solution = Solution()
-
 print(
     "Valid Stack Sequence:",
     solution.validateStackSequences(pushed, popped)
