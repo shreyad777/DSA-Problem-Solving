@@ -11,7 +11,6 @@ class Solution:
             ):
                 stack.pop()
                 pop_index += 1
-
         return len(stack) == 0
 
 
