@@ -2,7 +2,6 @@ class Solution:
     def validateStackSequences(self, pushed, popped):
         stack = []
         pop_index = 0
-
         for value in pushed:
             stack.append(value)
 
