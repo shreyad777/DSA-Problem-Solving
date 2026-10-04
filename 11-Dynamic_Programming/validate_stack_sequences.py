@@ -15,7 +15,6 @@ class Solution:
 pushed = list(
     map(int, input("Enter pushed sequence: ").split())
 )
-
 popped = list(
     map(int, input("Enter popped sequence: ").split())
 )
