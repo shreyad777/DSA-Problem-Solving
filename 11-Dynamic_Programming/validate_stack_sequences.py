@@ -4,7 +4,6 @@ class Solution:
         pop_index = 0
         for value in pushed:
             stack.append(value)
-
             while (
                 stack
                 and pop_index < len(popped)
