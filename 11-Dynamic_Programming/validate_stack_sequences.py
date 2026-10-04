@@ -12,8 +12,6 @@ class Solution:
                 stack.pop()
                 pop_index += 1
         return len(stack) == 0
-
-
 pushed = list(
     map(int, input("Enter pushed sequence: ").split())
 )
