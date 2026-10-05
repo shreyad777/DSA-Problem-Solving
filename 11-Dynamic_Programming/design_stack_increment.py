@@ -30,12 +30,10 @@ for operation in operations:
         print("Push:", value)
     elif operation == "pop":
         print("Pop:", stack.pop())
-
     elif operation == "increment":
         k = int(values[value_index])
         val = int(values[value_index + 1])
         value_index += 2
-
         stack.increment(k, val)
 
         print(
