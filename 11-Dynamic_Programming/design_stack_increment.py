@@ -26,10 +26,8 @@ for operation in operations:
     if operation == "push":
         value = int(values[value_index])
         value_index += 1
-
         stack.push(value)
         print("Push:", value)
-
     elif operation == "pop":
         print("Pop:", stack.pop())
 
