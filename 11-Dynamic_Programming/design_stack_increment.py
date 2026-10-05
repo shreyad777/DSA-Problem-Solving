@@ -11,11 +11,8 @@ class CustomStack:
         return self.stack.pop()
     def increment(self, k, val):
         limit = min(k, len(self.stack))
-
         for i in range(limit):
             self.stack[i] += val
-
-
 max_size = int(input("Enter maximum stack size: "))
 
 stack = CustomStack(max_size)
