@@ -9,17 +9,11 @@ class Solution:
                     max_depth,
                     current_depth
                 )
-
             elif char == ")":
                 current_depth -= 1
-
         return max_depth
-
-
 s = input("Enter parentheses expression: ")
-
 solution = Solution()
-
 print(
     "Maximum Nesting Depth:",
     solution.maxDepth(s)
