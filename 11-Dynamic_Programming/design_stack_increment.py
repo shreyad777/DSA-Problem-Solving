@@ -1,5 +1,4 @@
 class CustomStack:
-
     def __init__(self, maxSize):
         self.maxSize = maxSize
         self.stack = []
@@ -60,4 +59,3 @@ for operation in operations:
             "elements by",
             val
         )
-        
