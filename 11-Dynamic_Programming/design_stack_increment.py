@@ -14,9 +14,7 @@ class CustomStack:
         for i in range(limit):
             self.stack[i] += val
 max_size = int(input("Enter maximum stack size: "))
-
 stack = CustomStack(max_size)
-
 operations = input(
     "Enter operations separated by spaces: "
 ).split()
