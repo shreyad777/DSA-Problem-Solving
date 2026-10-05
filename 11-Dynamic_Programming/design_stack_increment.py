@@ -35,7 +35,6 @@ for operation in operations:
         val = int(values[value_index + 1])
         value_index += 2
         stack.increment(k, val)
-
         print(
             "Increment:",
             k,
