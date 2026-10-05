@@ -18,11 +18,9 @@ stack = CustomStack(max_size)
 operations = input(
     "Enter operations separated by spaces: "
 ).split()
-
 values = input(
     "Enter values for push/increment operations: "
 ).split()
-
 value_index = 0
 
 for operation in operations:
