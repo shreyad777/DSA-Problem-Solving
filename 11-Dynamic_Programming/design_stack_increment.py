@@ -2,11 +2,9 @@ class CustomStack:
     def __init__(self, maxSize):
         self.maxSize = maxSize
         self.stack = []
-
     def push(self, x):
         if len(self.stack) < self.maxSize:
             self.stack.append(x)
-
     def pop(self):
         if not self.stack:
             return -1
