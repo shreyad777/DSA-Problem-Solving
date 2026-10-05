@@ -8,9 +8,7 @@ class CustomStack:
     def pop(self):
         if not self.stack:
             return -1
-
         return self.stack.pop()
-
     def increment(self, k, val):
         limit = min(k, len(self.stack))
 
