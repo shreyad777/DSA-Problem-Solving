@@ -3,7 +3,6 @@ class Solution:
         stack = []
         for char in s:
             stack.append(char)
-
             if len(stack) >= 3:
                 if (
                     stack[-3] == "a"
