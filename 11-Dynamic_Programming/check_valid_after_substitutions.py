@@ -13,8 +13,6 @@ class Solution:
                     stack.pop()
                     stack.pop()
         return len(stack) == 0
-
-
 s = input("Enter string: ")
 
 solution = Solution()
