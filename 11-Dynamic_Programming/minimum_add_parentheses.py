@@ -10,7 +10,6 @@ class Solution:
                     open_count -= 1
                 else:
                     additions += 1
-
         return additions + open_count
 
 
