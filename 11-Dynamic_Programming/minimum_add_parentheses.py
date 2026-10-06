@@ -13,7 +13,6 @@ class Solution:
         return additions + open_count
 s = input("Enter parentheses string: ")
 solution = Solution()
-
 print(
     "Minimum Additions:",
     solution.minAddToMakeValid(s)
