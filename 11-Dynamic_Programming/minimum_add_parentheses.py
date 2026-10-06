@@ -2,9 +2,7 @@ class Solution:
     def minAddToMakeValid(self, s):
         open_count = 0
         additions = 0
-
         for char in s:
-
             if char == "(":
                 open_count += 1
 
