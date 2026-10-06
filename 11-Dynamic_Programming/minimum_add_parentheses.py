@@ -1,5 +1,4 @@
 class Solution:
-
     def minAddToMakeValid(self, s):
         open_count = 0
         additions = 0
