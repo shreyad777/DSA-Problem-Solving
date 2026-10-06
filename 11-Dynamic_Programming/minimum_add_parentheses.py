@@ -12,7 +12,6 @@ class Solution:
                     additions += 1
         return additions + open_count
 s = input("Enter parentheses string: ")
-
 solution = Solution()
 
 print(
