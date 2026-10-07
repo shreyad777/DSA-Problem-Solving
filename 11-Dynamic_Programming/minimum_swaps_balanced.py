@@ -13,7 +13,6 @@ class Solution:
         return swaps
 s = input("Enter bracket string: ")
 solution = Solution()
-
 print(
     "Minimum Swaps:",
     solution.minSwaps(s)
