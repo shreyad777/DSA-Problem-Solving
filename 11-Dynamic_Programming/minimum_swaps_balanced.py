@@ -3,7 +3,6 @@ class Solution:
         balance = 0
         swaps = 0
         for char in s:
-
             if char == "[":
                 balance += 1
 
