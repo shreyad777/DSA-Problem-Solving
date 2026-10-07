@@ -10,7 +10,6 @@ class Solution:
             if balance < 0:
                 swaps += 1
                 balance = 1
-
         return swaps
 
 
