@@ -11,8 +11,6 @@ class Solution:
                     insertions += 1
                     needed = 1
         return insertions + needed
-
-
 s = input("Enter parentheses string: ")
 
 solution = Solution()
