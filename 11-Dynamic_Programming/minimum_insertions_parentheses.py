@@ -13,7 +13,6 @@ class Solution:
         return insertions + needed
 s = input("Enter parentheses string: ")
 solution = Solution()
-
 print(
     "Minimum Insertions:",
     solution.minInsertions(s)
