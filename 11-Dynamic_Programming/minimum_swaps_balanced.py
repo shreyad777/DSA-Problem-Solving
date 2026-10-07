@@ -7,7 +7,6 @@ class Solution:
                 balance += 1
             else:
                 balance -= 1
-
             if balance < 0:
                 swaps += 1
                 balance = 1
