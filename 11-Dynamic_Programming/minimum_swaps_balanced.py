@@ -2,7 +2,6 @@ class Solution:
     def minSwaps(self, s):
         balance = 0
         swaps = 0
-
         for char in s:
 
             if char == "[":
