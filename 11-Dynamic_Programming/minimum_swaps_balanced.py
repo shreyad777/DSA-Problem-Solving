@@ -1,5 +1,4 @@
 class Solution:
-
     def minSwaps(self, s):
         balance = 0
         swaps = 0
