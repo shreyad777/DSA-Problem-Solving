@@ -5,7 +5,6 @@ class Solution:
         for char in s:
             if char == "[":
                 balance += 1
-
             else:
                 balance -= 1
 
