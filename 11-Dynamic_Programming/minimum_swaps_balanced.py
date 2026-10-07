@@ -11,8 +11,6 @@ class Solution:
                 swaps += 1
                 balance = 1
         return swaps
-
-
 s = input("Enter bracket string: ")
 
 solution = Solution()
