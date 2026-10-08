@@ -5,7 +5,6 @@ class Solution:
         for i, char in enumerate(chars):
             if char == "(":
                 stack.append(i)
-
             elif char == ")":
 
                 if stack:
