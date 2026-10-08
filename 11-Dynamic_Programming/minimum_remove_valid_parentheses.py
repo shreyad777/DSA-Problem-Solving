@@ -3,7 +3,6 @@ class Solution:
         chars = list(s)
         stack = []
         for i, char in enumerate(chars):
-
             if char == "(":
                 stack.append(i)
 
