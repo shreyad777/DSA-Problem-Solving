@@ -15,7 +15,6 @@ class Solution:
             chars[index] = ""
         return "".join(chars)
 s = input("Enter string: ")
-
 solution = Solution()
 
 print(
