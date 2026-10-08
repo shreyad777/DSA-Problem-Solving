@@ -41,13 +41,9 @@ while True:
         else:
             print("Front:", queue.peek())
     elif choice == "4":
-
         print("Queue empty:", queue.empty())
-
     elif choice == "5":
-
         print("Program ended.")
         break
-
     else:
         print("Invalid choice.")
