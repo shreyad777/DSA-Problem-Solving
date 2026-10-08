@@ -13,7 +13,6 @@ class Solution:
         while stack:
             index = stack.pop()
             chars[index] = ""
-
         return "".join(chars)
 
 
