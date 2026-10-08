@@ -10,8 +10,6 @@ class Solution:
                     stack.pop()
                 else:
                     chars[i] = ""
-
-        # Remove unmatched '('
         while stack:
             index = stack.pop()
             chars[index] = ""
