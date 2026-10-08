@@ -25,30 +25,21 @@ while True:
     print("3. Peek")
     print("4. Empty")
     print("5. Exit")
-
     choice = input("Enter choice: ")
-
     if choice == "1":
-
         value = int(input("Enter value: "))
         queue.push(value)
-
         print("Inserted:", value)
-
     elif choice == "2":
-
         if queue.empty():
             print("Queue is empty")
         else:
             print("Removed:", queue.pop())
-
     elif choice == "3":
-
         if queue.empty():
             print("Queue is empty")
         else:
             print("Front:", queue.peek())
-
     elif choice == "4":
 
         print("Queue empty:", queue.empty())
