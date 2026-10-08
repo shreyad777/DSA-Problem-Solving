@@ -6,7 +6,6 @@ class Solution:
             if char == "(":
                 stack.append(i)
             elif char == ")":
-
                 if stack:
                     stack.pop()
                 else:
