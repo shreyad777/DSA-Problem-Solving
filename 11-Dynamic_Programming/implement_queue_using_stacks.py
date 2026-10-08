@@ -18,12 +18,8 @@ class MyQueue:
                 self.output_stack.append(
                     self.input_stack.pop()
                 )
-
-
 queue = MyQueue()
-
 while True:
-
     print("\n1. Push")
     print("2. Pop")
     print("3. Peek")
