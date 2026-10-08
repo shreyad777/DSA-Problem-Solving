@@ -1,5 +1,4 @@
- class Solution:
-
+class Solution:
     def minRemoveToMakeValid(self, s):
         chars = list(s)
         stack = []
