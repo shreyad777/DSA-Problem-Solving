@@ -1,5 +1,4 @@
 class MyQueue:
-
     def __init__(self):
         self.input_stack = []
         self.output_stack = []
@@ -77,4 +76,3 @@ while True:
 
     else:
         print("Invalid choice.")
-        
