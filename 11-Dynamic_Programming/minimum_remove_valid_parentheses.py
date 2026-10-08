@@ -16,7 +16,6 @@ class Solution:
         return "".join(chars)
 s = input("Enter string: ")
 solution = Solution()
-
 print(
     "Valid String:",
     solution.minRemoveToMakeValid(s)
