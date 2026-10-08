@@ -11,13 +11,9 @@ class MyQueue:
         self.move_elements()
         return self.output_stack[-1]
     def empty(self):
-
         return len(self.input_stack) == 0 and len(self.output_stack) == 0
-
     def move_elements(self):
-
         if not self.output_stack:
-
             while self.input_stack:
                 self.output_stack.append(
                     self.input_stack.pop()
