@@ -14,8 +14,6 @@ class Solution:
             index = stack.pop()
             chars[index] = ""
         return "".join(chars)
-
-
 s = input("Enter string: ")
 
 solution = Solution()
