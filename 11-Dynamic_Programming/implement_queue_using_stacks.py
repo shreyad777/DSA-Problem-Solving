@@ -2,10 +2,8 @@ class MyQueue:
     def __init__(self):
         self.input_stack = []
         self.output_stack = []
-
     def push(self, x):
         self.input_stack.append(x)
-
     def pop(self):
 
         self.move_elements()
