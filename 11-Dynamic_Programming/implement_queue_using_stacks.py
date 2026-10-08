@@ -5,17 +5,11 @@ class MyQueue:
     def push(self, x):
         self.input_stack.append(x)
     def pop(self):
-
         self.move_elements()
-
         return self.output_stack.pop()
-
     def peek(self):
-
         self.move_elements()
-
         return self.output_stack[-1]
-
     def empty(self):
 
         return len(self.input_stack) == 0 and len(self.output_stack) == 0
