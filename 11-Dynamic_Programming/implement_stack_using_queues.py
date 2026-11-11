@@ -30,7 +30,6 @@ while True:
     elif choice == "2":
         result = stack.pop()
         print("Popped:", result if result is not None else "Stack is empty")
-
     elif choice == "3":
         result = stack.top()
         print("Top:", result if result is not None else "Stack is empty")
