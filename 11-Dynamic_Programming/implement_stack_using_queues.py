@@ -3,11 +3,8 @@ class MyStack:
         self.queue = []
     def push(self, x):
         self.queue.append(x)
-
-        # Move previous elements behind the new element
         for i in range(len(self.queue) - 1):
             self.queue.append(self.queue.pop(0))
-
     def pop(self):
         if self.empty():
             return None
