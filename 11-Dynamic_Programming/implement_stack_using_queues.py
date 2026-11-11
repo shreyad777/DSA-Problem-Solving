@@ -1,8 +1,6 @@
 class MyStack:
-
     def __init__(self):
         self.queue = []
-
     def push(self, x):
         self.queue.append(x)
 
