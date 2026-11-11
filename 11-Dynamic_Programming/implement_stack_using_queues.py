@@ -38,6 +38,5 @@ while True:
     elif choice == "5":
         print("Program ended.")
         break
-
     else:
         print("Invalid choice.")
