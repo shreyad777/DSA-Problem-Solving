@@ -12,9 +12,7 @@ class MyStack:
     def top(self):
         if self.empty():
             return None
-
         return self.queue[0]
-
     def empty(self):
         return len(self.queue) == 0
 
