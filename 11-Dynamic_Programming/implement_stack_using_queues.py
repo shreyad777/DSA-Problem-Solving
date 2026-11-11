@@ -33,7 +33,6 @@ while True:
     elif choice == "3":
         result = stack.top()
         print("Top:", result if result is not None else "Stack is empty")
-
     elif choice == "4":
         print("Stack empty:", stack.empty())
 
