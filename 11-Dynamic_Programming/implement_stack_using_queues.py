@@ -15,12 +15,8 @@ class MyStack:
         return self.queue[0]
     def empty(self):
         return len(self.queue) == 0
-
-
 stack = MyStack()
-
 while True:
-
     print("\n1. Push")
     print("2. Pop")
     print("3. Top")
