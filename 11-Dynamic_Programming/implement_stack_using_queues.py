@@ -35,7 +35,6 @@ while True:
         print("Top:", result if result is not None else "Stack is empty")
     elif choice == "4":
         print("Stack empty:", stack.empty())
-
     elif choice == "5":
         print("Program ended.")
         break
