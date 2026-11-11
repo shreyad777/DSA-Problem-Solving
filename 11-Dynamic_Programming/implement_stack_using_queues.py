@@ -27,7 +27,6 @@ while True:
         value = int(input("Enter value: "))
         stack.push(value)
         print("Inserted:", value)
-
     elif choice == "2":
         result = stack.pop()
         print("Popped:", result if result is not None else "Stack is empty")
