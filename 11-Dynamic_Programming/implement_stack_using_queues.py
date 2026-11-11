@@ -8,9 +8,7 @@ class MyStack:
     def pop(self):
         if self.empty():
             return None
-
         return self.queue.pop(0)
-
     def top(self):
         if self.empty():
             return None
