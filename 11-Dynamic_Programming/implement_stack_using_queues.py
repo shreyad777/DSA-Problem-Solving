@@ -22,9 +22,7 @@ while True:
     print("3. Top")
     print("4. Empty")
     print("5. Exit")
-
     choice = input("Enter choice: ")
-
     if choice == "1":
         value = int(input("Enter value: "))
         stack.push(value)
