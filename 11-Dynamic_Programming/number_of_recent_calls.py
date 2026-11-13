@@ -9,7 +9,6 @@ class RecentCounter:
         return len(self.queue)
 counter = RecentCounter()
 n = int(input("Enter number of requests: "))
-
 for i in range(n):
 
     t = int(input("Enter request time: "))
