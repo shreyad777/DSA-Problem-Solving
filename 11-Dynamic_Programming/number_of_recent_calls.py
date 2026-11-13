@@ -6,7 +6,6 @@ class RecentCounter:
         self.queue.append(t)
         while self.queue[0] < t - 3000:
             self.queue.popleft()
-
         return len(self.queue)
 
 
