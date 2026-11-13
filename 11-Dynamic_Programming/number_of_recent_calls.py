@@ -10,7 +10,6 @@ class RecentCounter:
 counter = RecentCounter()
 n = int(input("Enter number of requests: "))
 for i in range(n):
-
     t = int(input("Enter request time: "))
 
     print("Recent requests:", counter.ping(t))
