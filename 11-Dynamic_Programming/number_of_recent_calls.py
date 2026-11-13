@@ -7,7 +7,6 @@ class RecentCounter:
         while self.queue[0] < t - 3000:
             self.queue.popleft()
         return len(self.queue)
-
 counter = RecentCounter()
 
 n = int(input("Enter number of requests: "))
