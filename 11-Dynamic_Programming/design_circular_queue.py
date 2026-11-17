@@ -11,11 +11,8 @@ class MyCircularQueue:
         self.rear = (self.rear + 1) % self.size
         self.queue[self.rear] = value
         self.count += 1
-
         return True
-
     def deQueue(self):
-
         if self.isEmpty():
             return False
 
