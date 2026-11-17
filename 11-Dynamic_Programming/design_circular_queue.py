@@ -50,15 +50,11 @@ while True:
         print("Front:", q.Front())
     elif choice == "4":
         print("Rear:", q.Rear())
-
     elif choice == "5":
         print("Is Empty:", q.isEmpty())
-
     elif choice == "6":
         print("Is Full:", q.isFull())
-
     elif choice == "7":
         break
-
     else:
         print("Invalid choice.")
