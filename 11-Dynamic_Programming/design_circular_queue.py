@@ -33,7 +33,6 @@ class MyCircularQueue:
 capacity = int(input("Enter queue capacity: "))
 q = MyCircularQueue(capacity)
 while True:
-
     print("\n1. Enqueue")
     print("2. Dequeue")
     print("3. Front")
@@ -41,19 +40,14 @@ while True:
     print("5. Check Empty")
     print("6. Check Full")
     print("7. Exit")
-
     choice = input("Enter choice: ")
-
     if choice == "1":
         value = int(input("Enter value: "))
         print("Inserted:", q.enQueue(value))
-
     elif choice == "2":
         print("Deleted:", q.deQueue())
-
     elif choice == "3":
         print("Front:", q.Front())
-
     elif choice == "4":
         print("Rear:", q.Rear())
 
