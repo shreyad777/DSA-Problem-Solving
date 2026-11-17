@@ -18,7 +18,6 @@ class MyCircularQueue:
         self.front = (self.front + 1) % self.size
         self.count -= 1
         return True
-
     def Front(self):
 
         if self.isEmpty():
