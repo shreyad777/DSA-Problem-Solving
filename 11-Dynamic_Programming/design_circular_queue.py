@@ -6,10 +6,8 @@ class MyCircularQueue:
         self.rear = -1
         self.count = 0
     def enQueue(self, value):
-
         if self.isFull():
             return False
-
         self.rear = (self.rear + 1) % self.size
         self.queue[self.rear] = value
         self.count += 1
