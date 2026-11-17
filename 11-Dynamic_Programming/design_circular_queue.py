@@ -15,7 +15,6 @@ class MyCircularQueue:
     def deQueue(self):
         if self.isEmpty():
             return False
-
         self.front = (self.front + 1) % self.size
         self.count -= 1
 
