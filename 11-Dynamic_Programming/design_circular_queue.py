@@ -25,20 +25,13 @@ class MyCircularQueue:
     def Rear(self):
         if self.isEmpty():
             return -1
-
         return self.queue[self.rear]
-
     def isEmpty(self):
         return self.count == 0
-
     def isFull(self):
         return self.count == self.size
-
-
 capacity = int(input("Enter queue capacity: "))
-
 q = MyCircularQueue(capacity)
-
 while True:
 
     print("\n1. Enqueue")
