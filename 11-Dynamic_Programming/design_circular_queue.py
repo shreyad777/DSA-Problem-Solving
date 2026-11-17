@@ -1,12 +1,10 @@
 class MyCircularQueue:
-
     def __init__(self, k):
         self.size = k
         self.queue = [0] * k
         self.front = 0
         self.rear = -1
         self.count = 0
-
     def enQueue(self, value):
 
         if self.isFull():
@@ -89,4 +87,3 @@ while True:
 
     else:
         print("Invalid choice.")
-        
