@@ -26,9 +26,7 @@ class MyCircularDeque:
             self.rear = (self.rear + 1) % self.size
         self.deque[self.rear] = value
         self.count += 1
-
         return True
-
     def deleteFront(self):
 
         if self.isEmpty():
