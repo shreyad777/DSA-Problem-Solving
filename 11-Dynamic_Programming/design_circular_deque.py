@@ -47,32 +47,20 @@ class MyCircularDeque:
             self.rear = (self.rear - 1) % self.size
         self.count -= 1
         return True
-
     def getFront(self):
-
         if self.isEmpty():
             return -1
-
         return self.deque[self.front]
-
     def getRear(self):
-
         if self.isEmpty():
             return -1
-
         return self.deque[self.rear]
-
     def isEmpty(self):
         return self.count == 0
-
     def isFull(self):
         return self.count == self.size
-
-
 capacity = int(input("Enter deque capacity: "))
-
 dq = MyCircularDeque(capacity)
-
 while True:
 
     print("\n1. Insert Front")
