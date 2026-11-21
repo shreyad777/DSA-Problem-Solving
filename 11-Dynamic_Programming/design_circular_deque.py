@@ -5,12 +5,9 @@ class MyCircularDeque:
         self.front = 0
         self.rear = -1
         self.count = 0
-
     def insertFront(self, value):
-
         if self.isFull():
             return False
-
         if self.isEmpty():
             self.front = 0
             self.rear = 0
