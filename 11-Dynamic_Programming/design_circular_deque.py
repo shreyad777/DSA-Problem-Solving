@@ -15,7 +15,6 @@ class MyCircularDeque:
             self.front = (self.front - 1) % self.size
         self.deque[self.front] = value
         self.count += 1
-
         return True
 
     def insertLast(self, value):
