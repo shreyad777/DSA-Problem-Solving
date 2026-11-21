@@ -28,10 +28,8 @@ class MyCircularDeque:
         self.count += 1
         return True
     def deleteFront(self):
-
         if self.isEmpty():
             return False
-
         if self.count == 1:
             self.front = 0
             self.rear = -1
