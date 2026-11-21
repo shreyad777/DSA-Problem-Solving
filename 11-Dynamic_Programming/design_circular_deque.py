@@ -22,10 +22,8 @@ class MyCircularDeque:
         if self.isEmpty():
             self.front = 0
             self.rear = 0
-
         else:
             self.rear = (self.rear + 1) % self.size
-
         self.deque[self.rear] = value
         self.count += 1
 
