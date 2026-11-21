@@ -33,25 +33,18 @@ class MyCircularDeque:
         if self.count == 1:
             self.front = 0
             self.rear = -1
-
         else:
             self.front = (self.front + 1) % self.size
-
         self.count -= 1
         return True
-
     def deleteLast(self):
-
         if self.isEmpty():
             return False
-
         if self.count == 1:
             self.front = 0
             self.rear = -1
-
         else:
             self.rear = (self.rear - 1) % self.size
-
         self.count -= 1
         return True
 
