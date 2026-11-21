@@ -11,7 +11,6 @@ class MyCircularDeque:
         if self.isEmpty():
             self.front = 0
             self.rear = 0
-
         else:
             self.front = (self.front - 1) % self.size
 
