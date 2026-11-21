@@ -1,5 +1,4 @@
 class MyCircularDeque:
-
     def __init__(self, k):
         self.size = k
         self.deque = [0] * k
