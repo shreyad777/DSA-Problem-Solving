@@ -17,10 +17,8 @@ class MyCircularDeque:
         self.count += 1
         return True
     def insertLast(self, value):
-
         if self.isFull():
             return False
-
         if self.isEmpty():
             self.front = 0
             self.rear = 0
