@@ -62,7 +62,6 @@ class MyCircularDeque:
 capacity = int(input("Enter deque capacity: "))
 dq = MyCircularDeque(capacity)
 while True:
-
     print("\n1. Insert Front")
     print("2. Insert Rear")
     print("3. Delete Front")
@@ -72,38 +71,27 @@ while True:
     print("7. Check Empty")
     print("8. Check Full")
     print("9. Exit")
-
     choice = input("Enter choice: ")
-
     if choice == "1":
         value = int(input("Enter value: "))
         print("Inserted:", dq.insertFront(value))
-
     elif choice == "2":
         value = int(input("Enter value: "))
         print("Inserted:", dq.insertLast(value))
-
     elif choice == "3":
         print("Deleted:", dq.deleteFront())
-
     elif choice == "4":
         print("Deleted:", dq.deleteLast())
-
     elif choice == "5":
         print("Front:", dq.getFront())
-
     elif choice == "6":
         print("Rear:", dq.getRear())
-
     elif choice == "7":
         print("Is Empty:", dq.isEmpty())
-
     elif choice == "8":
         print("Is Full:", dq.isFull())
-
     elif choice == "9":
         print("Program ended.")
         break
-
     else:
         print("Invalid choice.")
