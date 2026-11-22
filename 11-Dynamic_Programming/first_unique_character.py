@@ -3,8 +3,6 @@ class Solution:
     def firstUniqChar(self, s):
         frequency = {}
         queue = deque()
-
-        # Count character frequencies
         for char in s:
             frequency[char] = frequency.get(char, 0) + 1
 
