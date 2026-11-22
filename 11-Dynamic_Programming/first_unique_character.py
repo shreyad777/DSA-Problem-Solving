@@ -8,8 +8,7 @@ class Solution:
         for i, char in enumerate(s):
             if frequency[char] == 1:
                 return i
-        return -1
-    
+        return -1 
 s = input("Enter a string: ")
 solution = Solution()
 result = solution.firstUniqChar(s)
