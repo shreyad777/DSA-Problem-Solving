@@ -5,8 +5,6 @@ class Solution:
         queue = deque()
         for char in s:
             frequency[char] = frequency.get(char, 0) + 1
-
-        # Store characters and their indexes
         for i, char in enumerate(s):
 
             if frequency[char] == 1:
