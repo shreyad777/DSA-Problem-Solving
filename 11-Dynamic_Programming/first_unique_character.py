@@ -12,5 +12,4 @@ class Solution:
 s = input("Enter a string: ")
 solution = Solution()
 result = solution.firstUniqChar(s)
-
 print("First Unique Character Index:", result)
