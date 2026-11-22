@@ -11,7 +11,6 @@ class Solution:
         return -1
 s = input("Enter a string: ")
 solution = Solution()
-
 result = solution.firstUniqChar(s)
 
 print("First Unique Character Index:", result)
