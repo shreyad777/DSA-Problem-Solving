@@ -2,7 +2,6 @@ from collections import deque
 class Solution:
     def firstUniqChar(self, s):
         frequency = {}
-
         queue = deque()
 
         # Count character frequencies
