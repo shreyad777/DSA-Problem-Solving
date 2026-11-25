@@ -13,7 +13,6 @@ class Solution:
                 result += queue[0]
             else:
                 result += "#"
-
         return result
 
 
