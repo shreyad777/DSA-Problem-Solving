@@ -1,0 +1,37 @@
+from collections import deque
+
+
+class Solution:
+
+    def FirstNonRepeating(self, stream):
+
+        queue = deque()
+        frequency = {}
+        result = ""
+
+        for char in stream:
+
+            # Update frequency
+            frequency[char] = frequency.get(char, 0) + 1
+
+            # Add character to queue
+            queue.append(char)
+
+            # Remove repeated characters
+            while queue and frequency[queue[0]] > 1:
+                queue.popleft()
+
+            # Get first non-repeating character
+            if queue:
+                result += queue[0]
+            else:
+                result += "#"
+
+        return result
+
+
+stream = input("Enter character stream: ")
+
+solution = Solution()
+
+print("Result:", solution.FirstNonRepeating(stream))
