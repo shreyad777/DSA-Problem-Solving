@@ -7,8 +7,6 @@ class Solution:
         for char in stream:
             frequency[char] = frequency.get(char, 0) + 1
             queue.append(char)
-
-            # Remove repeated characters
             while queue and frequency[queue[0]] > 1:
                 queue.popleft()
 
