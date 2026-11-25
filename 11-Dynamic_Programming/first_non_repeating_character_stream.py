@@ -14,8 +14,6 @@ class Solution:
             else:
                 result += "#"
         return result
-
-
 stream = input("Enter character stream: ")
 
 solution = Solution()
