@@ -11,18 +11,11 @@ class Solution:
             max_queue.append(right)
             while min_queue and nums[min_queue[-1]] > nums[right]:
                 min_queue.pop()
-
             min_queue.append(right)
-
-            # Shrink window if difference exceeds limit
             while nums[max_queue[0]] - nums[min_queue[0]] > limit:
-
                 if max_queue[0] == left:
-                    max_queue.popleft()
-
-                if min_queue[0] == left:
+                    max_queue.popleft()                if min_queue[0] == left:
                     min_queue.popleft()
-
                 left += 1
 
             result = max(result, right - left + 1)
