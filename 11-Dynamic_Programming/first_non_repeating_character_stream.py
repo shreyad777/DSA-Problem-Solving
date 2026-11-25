@@ -9,7 +9,6 @@ class Solution:
             queue.append(char)
             while queue and frequency[queue[0]] > 1:
                 queue.popleft()
-
             # Get first non-repeating character
             if queue:
                 result += queue[0]
