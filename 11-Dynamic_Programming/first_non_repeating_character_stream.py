@@ -1,6 +1,5 @@
 from collections import deque
 class Solution:
-
     def FirstNonRepeating(self, stream):
 
         queue = deque()
