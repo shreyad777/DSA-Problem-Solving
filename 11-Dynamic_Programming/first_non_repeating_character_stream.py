@@ -15,7 +15,6 @@ class Solution:
                 result += "#"
         return result
 stream = input("Enter character stream: ")
-
 solution = Solution()
 
 print("Result:", solution.FirstNonRepeating(stream))
