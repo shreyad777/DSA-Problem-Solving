@@ -6,8 +6,6 @@ class Solution:
         result = ""
         for char in stream:
             frequency[char] = frequency.get(char, 0) + 1
-
-            # Add character to queue
             queue.append(char)
 
             # Remove repeated characters
