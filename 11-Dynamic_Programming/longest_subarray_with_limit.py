@@ -17,9 +17,7 @@ class Solution:
                     max_queue.popleft()                if min_queue[0] == left:
                     min_queue.popleft()
                 left += 1
-
             result = max(result, right - left + 1)
-
         return result
 
 
