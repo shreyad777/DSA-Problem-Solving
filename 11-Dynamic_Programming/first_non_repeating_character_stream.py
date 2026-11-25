@@ -5,8 +5,6 @@ class Solution:
         frequency = {}
         result = ""
         for char in stream:
-
-            # Update frequency
             frequency[char] = frequency.get(char, 0) + 1
 
             # Add character to queue
