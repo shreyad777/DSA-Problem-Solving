@@ -3,10 +3,8 @@ class Solution:
     def longestSubarray(self, nums, limit):
         max_queue = deque()
         min_queue = deque()
-
         left = 0
         result = 0
-
         for right in range(len(nums)):
 
             # Maintain decreasing order for maximum
