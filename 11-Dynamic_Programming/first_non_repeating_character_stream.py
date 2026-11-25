@@ -4,7 +4,6 @@ class Solution:
         queue = deque()
         frequency = {}
         result = ""
-
         for char in stream:
 
             # Update frequency
