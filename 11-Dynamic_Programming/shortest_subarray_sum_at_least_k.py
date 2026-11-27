@@ -14,10 +14,8 @@ class Solution:
             while queue and prefix[queue[-1]] >= prefix[i]:
                 queue.pop()
             queue.append(i)
-
         if result == n + 1:
             return -1
-
         return result
 
 
