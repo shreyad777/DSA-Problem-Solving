@@ -17,8 +17,6 @@ class Solution:
         if result == n + 1:
             return -1
         return result
-
-
 nums = list(map(int, input("Enter array elements: ").split()))
 k = int(input("Enter target sum: "))
 
