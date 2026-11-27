@@ -3,8 +3,6 @@ class Solution:
     def shortestSubarray(self, nums, k):
         n = len(nums)
         prefix = [0] * (n + 1)
-
-        # Calculate prefix sums
         for i in range(n):
             prefix[i + 1] = prefix[i] + nums[i]
 
