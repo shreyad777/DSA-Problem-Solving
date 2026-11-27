@@ -8,10 +8,7 @@ class Solution:
         queue = deque()
         result = n + 1
         for i in range(n + 1):
-
-            # Find valid subarrays
             while queue and prefix[i] - prefix[queue[0]] >= k:
-
                 length = i - queue.popleft()
                 result = min(result, length)
 
