@@ -11,11 +11,8 @@ class Solution:
             while queue and prefix[i] - prefix[queue[0]] >= k:
                 length = i - queue.popleft()
                 result = min(result, length)
-
-            # Maintain increasing prefix sums
             while queue and prefix[queue[-1]] >= prefix[i]:
                 queue.pop()
-
             queue.append(i)
 
         if result == n + 1:
