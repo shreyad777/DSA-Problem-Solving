@@ -1,8 +1,6 @@
 from collections import deque
 class Solution:
-
     def shortestSubarray(self, nums, k):
-
         n = len(nums)
 
         prefix = [0] * (n + 1)
