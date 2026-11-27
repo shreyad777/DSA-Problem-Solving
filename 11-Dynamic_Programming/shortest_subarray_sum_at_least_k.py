@@ -19,7 +19,6 @@ class Solution:
         return result
 nums = list(map(int, input("Enter array elements: ").split()))
 k = int(input("Enter target sum: "))
-
 solution = Solution()
 
 print("Shortest Subarray Length:", solution.shortestSubarray(nums, k))
